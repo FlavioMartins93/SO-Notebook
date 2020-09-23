@@ -1,0 +1,90 @@
+Este comando lista os ficheiros:
+$ ls
+>>>
+a.c
+a.out
+batata.c
+coisa.c
+exemplo.nb
+notebook.c
+readLine.c
+SO.zip
+Temp
+<<<
+Agora podemos ordenar estes ficheiros:
+$| sort
+>>>
+a.c
+a.out
+batata.c
+coisa.c
+exemplo.nb
+notebook.c
+readLine.c
+SO.zip
+Temp
+<<<
+E escolher o primeiro:
+$| head -1
+>>>
+a.c
+<<<
+Este comando lista os ficheiros:
+$ ls
+>>>
+a.c
+a.out
+batata.c
+coisa.c
+exemplo.nb
+notebook.c
+readLine.c
+SO.zip
+Temp
+<<<
+Este comando concatena os ficheiros lidos e imprimi no stdout
+$ cat a.c batata.c coisa.c
+>>>
+a
+a
+a
+batata
+batata
+batata
+coisa
+coisa
+coisa
+<<<
+Este comando cria um novo ficheiro vazio
+$ touch novoficheirovazio
+>>>
+<<<
+Este comando lista os ficheiros:
+$ ls
+>>>
+a.c
+a.out
+batata.c
+coisa.c
+exemplo.nb
+notebook.c
+novoficheirovazio
+readLine.c
+SO.zip
+Temp
+<<<
+Este comando remove um ficheiro:
+$ rm novoficheirovazio
+>>>
+<<<
+Este comando escolhe os 4 ultimos do comando 2 vezes anterior
+$2| tail -4
+>>>
+novoficheirovazio
+readLine.c
+SO.zip
+Temp
+<<<
+$ grep
+>>>
+<<<
